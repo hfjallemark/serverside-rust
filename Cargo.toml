@@ -1,0 +1,19 @@
+[package]
+authors = ["hfjallemark <hans@fjallemark.com>"]
+edition = "2018"
+name = "lantagram"
+version = "0.1.0"
+
+[dependencies]
+postgres = "0.15.2"
+rocket = "0.4.0"
+
+[dependencies.askama]
+default-features = false
+features = ["with-rocket"]
+version = "0.8.0"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["postgres_pool"]
+version = "0.4.0"

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lantagram</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+      <h1>Lantagram</h1>
+      <nav>
+        <a href="{{ uri!(get_posts) }}">Feed</a>
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
